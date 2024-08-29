@@ -1,25 +1,89 @@
+# Node.js dependencies
+/node_modules
+
 # Logs
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Directory for environment variable definitions
 .env
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS-specific files (macOS)
 .DS_Store
+
+# OS-specific files (Windows)
+Thumbs.db
+Desktop.ini
+
+# Build output directories
+/dist
+/build
+
+# Cache and temporary files
+.cache
+.tmp
+.vscode
+
+# IDE/Editor-specific files
+.idea
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.swp
+
+# Yarn files
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Parcel-bundler cache
+.cache/
+
+# Storybook files
+out/
+
+# Testing
+coverage/
+
+# Linting
+.eslintcache
+
+# Miscellaneous
+*.log
+*.lock
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# dotenv environment variable files
+.env
+.env.test
+.env.production
+
+# npm shrinkwrap
+npm-shrinkwrap.json
+
+# Webpack output
+/.next/
+/out/
+.pnp
+.pnp.js
+
+# TypeScript cache
+*.tsbuildinfo
