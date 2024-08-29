@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Target the calendar icon */
+.custom-date-input {
+    position: relative;
+    font-size: 1em;
+    color: #1DD100;
+    /* Sets inner text color to green */
+}
+
+/* Adjust the color of the calendar icon */
+.custom-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(40%) sepia(74%) saturate(6367%) hue-rotate(76deg) brightness(92%) contrast(88%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Card-box:hover .animate {
+    animation: jiggle 1.5s infinite ease-in-out;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: translateX(-20%);
+    }
+
+    50% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.nav::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #1DD100;
+    transition: width 0.6s ease;
+}
+
+.nav:hover::before {
+    width: 100%;
+}
+
+.nav.active {
+    color: #1cd100bd;
+}
+
+.nav.active::before {
+    width: 100%;
+}
+
+.all-seats {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.3rem;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.seat {
+    width: 4rem;
+    height: 3rem;
+    margin: 0.32rem;
+    background: #f7f8f8;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.seat.booked {
+    background: #9BA2AC;
+    cursor: not-allowed;
+}
+
+.seat.grr {
+    background: #1dd100;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 5.5rem;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.seat-nokol:nth-of-type(2) {
+    margin-right: 0.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+}
+.flash {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .flash.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .flash.hide {
+    transform: translateX(100%);
+    opacity: 0;
+  }
