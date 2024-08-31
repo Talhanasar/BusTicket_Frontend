@@ -60,9 +60,9 @@ const FormRight = ({ selectedSeats, unitPrice, coupons, busId }) => {
 
 
     return (
-        <div className="right w-[40%] h-full">
+        <div className="right lg:w-[40%] h-full">
             <div className="flex flex-col font-['Inter'] text-[#030712]">
-                <h2 className="font-semibold text-[1.3em] font-['Raleway'] text-[#030712] mb-[0.8em]">Select Your Seat</h2>
+                <h2 className="font-semibold text-[1.3em] font-['Raleway'] text-[#030712] mb-[0.4rem] lg:mb-[0.8em]">Complete Booking</h2>
                 <div className="border border-dashed border-[rgba(3,7,18,0.2)] w-[98%]"></div>
 
                 <div className="rounded-xl bg-[#F7F8F8] p-[1.7em] m-[1em] w-full max-w-lg mx-auto">

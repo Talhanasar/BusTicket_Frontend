@@ -5,7 +5,7 @@
 /* Target the calendar icon */
 .custom-date-input {
     position: relative;
-    font-size: 1em;
+    font-size: 0.9rem;
     color: #1DD100;
     /* Sets inner text color to green */
 }
@@ -62,7 +62,7 @@
 .all-seats {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     gap: 0.3rem;
 }
 
@@ -122,10 +122,6 @@
         gap: 0.2rem;
     }
 
-    p {
-        font-size: 0.9rem;
-    }
-
 }
 .flash {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -139,4 +135,50 @@
   .flash.hide {
     transform: translateX(100%);
     opacity: 0;
+  }
+
+
+ /* Responsive for mobile */
+ 
+  @media(width < 470px){
+    .seat {
+        width: 2.5rem;
+        height: 1.9rem;
+        margin: 0rem;
+        background: #f7f8f8;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .all-seats {
+        gap: 0.6rem;
+    }
+    
+    .rows {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    .seat:nth-of-type(2) {
+        margin-right: 3rem;
+    }
+    .last{
+        gap: 1rem;
+    }
+    .seat-nokol:nth-of-type(2) {
+        margin-right: 0rem;
+    }
+
+    /* toastify edit for mobile  */
+    .foo {
+        width: 300px !important; /* Adjust the width here */
+        left: auto !important;
+        right: 6px !important;
+        top: 10px !important;
+        border-radius: 10px !important;
+        font-size: 0.8rem !important;
+        .Toastify__toast{
+            border-radius: 10px !important;
+        }
+    }
   }

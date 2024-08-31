@@ -4,29 +4,29 @@ const LeftSeatSelection = ({ selectedSeats, handleSeatSelection, bookedSeats }) 
 
     return (
         <>
-            <div className="bus flex flex-col w-[55%] font-['Inter']">
-                <h1 className='text-[1.4em] font-["Raleway"] font-semibold mb-[0.8em]' >Select Your Seat</h1>
+            <div className="bus flex flex-col w-full lg:w-[55%] font-['Inter']">
+                <h1 className=' text-[1.2rem] lg:text-[1.4em] font-["Raleway"] font-semibold mb-[0.3rem] lg:mb-[0.8em]' >Select Your Seat</h1>
                 <div className="border border-dashed border-[rgba(3,7,18,0.2)] w-full"></div>
-                <div className='info my-[1em] flex justify-around items-center'>
+                <div className='info my-[0.5rem] lg:my-[1em] flex justify-around items-center'>
                     <div>
-                        <img className="h-[1.3em]" src="/images/seat-gray.png" alt="seat-gray" />
-                        <p className="text-[#030712]/50">Available</p>
+                        <img className="h-[0.8rem] lg:h-[1.3rem]" src="/images/seat-gray.png" alt="seat-gray" />
+                        <p className="text-[0.7rem] lg:[0.9rem] text-[#030712]/50 ">Available</p>
                     </div>
                     <div>
-                        <img className="h-[1.3em]" src="/images/seat-booked.svg" alt="seat-booked" />
-                        <p className="text-[#91969c]">Booked</p>
+                        <img className="h-[0.8rem] lg:h-[1.3rem]" src="/images/seat-booked.svg" alt="seat-booked" />
+                        <p className="text-[0.7rem] lg:[0.9rem] text-[#91969c]">Booked</p>
                     </div>
                     <div>
-                        <img className="h-[1.3em]" src="/images/seat-green-filled.png" alt="seat-gray" />
-                        <p className="text-[#1dd100] text-[1.3rem]">Selected</p>
+                        <img className="h-[0.8rem] lg:h-[1.3rem]" src="/images/seat-green-filled.png" alt="seat-gray" />
+                        <p className="text-[0.7rem] lg:[0.9rem] text-[#1dd100]">Selected</p>
                     </div>
                 </div>
                 <div className="border border-dashed border-[rgba(3,7,18,0.2)] w-full"></div>
                 <div className="flex justify-center items-center">
-                    <div className="all-seats text-[0.9rem] text-[#030712]/50">
-                        <div className=" w-max my-[0.9rem]">
-                            <figure className="w-[4.5rem] h-[3.33rem] bg-[#030712]/10 flex justify-center items-center rounded-[0.7rem]">
-                                <img src="/images/wheel.svg" alt="" />
+                    <div className="all-seats text-[0.6rem] lg:text-[0.9rem] text-[#030712]/50">
+                        <div className=" flex justify-end w-[99%] m-[0.7rem_0_0.2rem_0] lg:m-[1.8rem_0_0.5rem_0]">
+                            <figure className=" h-[1.8rem] w-[2.5rem] lg:w-[4.5rem] lg:h-[3.33rem] bg-[#030712]/10 flex justify-center items-center rounded-[0.3rem] lg:rounded-[0.7rem]">
+                                <img className="h-[1.5rem] lg:h-auto" src="/images/wheel.svg" alt="car steering" />
                             </figure>
                         </div>
                         {rows.map((row) => (

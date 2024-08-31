@@ -5,7 +5,6 @@ import { AppLayout } from "./Pages/AppLayout"
 import { bookingPage, busPage } from "./Pages/Functions/LoaderFunctions"
 import { ErrorPage } from "./Pages/ErrorPage"
 import { Booking } from "./Pages/Booking"
-import { submitForm } from "./Pages/Functions/SubmitFunction"
 import SuccessPage from "./Pages/SuccessPage"
 
 function App() {
