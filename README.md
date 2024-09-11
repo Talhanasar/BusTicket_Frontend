@@ -1,28 +1,23 @@
-# BusTicket_Frontend
+# Bus Ticket Booking - Frontend
 
-This is the frontend of a bus ticket booking system that allows users to search for available buses by entering departure and arrival cities, along with the travel date. The frontend is built using React and communicates with the backend API to fetch bus details.
+This is the frontend part of the Bus Ticket Booking website, where users can search for buses based on departure city, destination city, and date.
+
+Visit the live website: [Talha Paribahan](https://talha-paribahan.vercel.app/)
+
+This project is my first full-stack web design where I learned about data management and how to use data for specific needs.
 
 ## Features
 
-- Dynamic search with city suggestions
-- Date selection for travel
-- Form validation for input fields
-- Fetches available buses from the backend API
+- **City Search with Suggestions**: Users can select departure and destination cities with an auto-suggestion dropdown.
+- **Date Picker**: Users can select the travel date.
+- **Form Validation**: Input fields are validated before searching for available buses.
 
-## Prerequisites
+## Installation
 
-Make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v14+)
-- [npm](https://www.npmjs.com/)
-
-## Getting Started
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/your-username/BusTicket_Frontend.git
-    ```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Talhanasar/BusTicket_Frontend.git
+   ```
 
 2. **Navigate to the project directory:**
 
