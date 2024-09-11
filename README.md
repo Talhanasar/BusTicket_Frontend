@@ -4,7 +4,7 @@ This is the frontend part of the Bus Ticket Booking website, where users can sea
 
 Visit the live website: [Talha Paribahan](https://talha-paribahan.vercel.app/)
 
-This project is my first full-stack web design where I learned about data management and how to use data for specific needs.
+This project is my first MERN web app where I learned about data management and how to use data for specific needs.
 
 ## Features
 
