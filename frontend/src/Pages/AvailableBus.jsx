@@ -31,30 +31,15 @@ export const AvailableBus = () => {
             </div>
         )
     }
-    if(window.innerWidth < 450){
-        return(
-            <ul className="flex flex-col justify-center items-center gap-10 min-h-[100vh] py-6" role="list">
-            {data.map((currEl) => {
-                return (
-                    <li key={currEl._id} role="listitem" className="w-full">
-                        <button type="button" onClick={() => handleClick(currEl._id)} className="Card-box flex justify-center items-center gap-5 bg-[#f7f8f8] p-3 md:p-6 rounded-[1.5rem] md:rounded-[3rem] cursor-pointer w-full text-left">
-                            <BusCard w={95} h={45} data={currEl} />
-                        </button>
-                    </li>
-                )
-            })}
-        </ul>
-        )
-    }
 
     return (
         <ul className="flex flex-col justify-center items-center gap-10 min-h-[100vh] py-6" role="list">
             {data.map((currEl) => {
                 return (
                     <li key={currEl._id} role="listitem" className="w-full">
-                        <button type="button" onClick={() => handleClick(currEl._id)} className="Card-box flex justify-center items-center gap-5 bg-[#f7f8f8] p-6 rounded-[3rem] cursor-pointer w-full text-left">
-                            <PiArrowFatLinesRightThin className="text-[3rem] animate " />
-                            <BusCard w={70} h={18} data={currEl} />
+                        <button type="button" onClick={() => handleClick(currEl._id)} className="Card-box flex justify-center items-center gap-5 bg-[#f7f8f8] p-3 md:p-6 rounded-xl md:rounded-3xl cursor-pointer w-full text-left">
+                            <PiArrowFatLinesRightThin className="text-[3rem] hidden lg:block" />
+                            <BusCard data={currEl} />
                         </button>
                     </li>
                 )
