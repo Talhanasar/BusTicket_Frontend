@@ -6,12 +6,12 @@ A MERN stack bus ticket booking application. This project is a monorepo containi
 
 ```
 BusTicketBoking/
-├── BusTicket_Backend/
+├── backend/
 │   ├── .env.example
 │   ├── index.js
 │   ├── seed.js
 │   └── package.json
-└── BusTicket_Frontend/
+└── frontend/
     ├── src/
     ├── public/
     ├── index.html
@@ -23,11 +23,11 @@ BusTicketBoking/
 
 Follow these steps to get the application running locally.
 
-### Backend (`BusTicket_Backend/`)
+### Backend (`backend/`)
 
 1. **Navigate to the backend directory:**
    ```bash
-   cd BusTicket_Backend
+   cd backend
    ```
 2. **Install dependencies:**
    ```bash
@@ -60,11 +60,11 @@ Follow these steps to get the application running locally.
    npm start
    ```
 
-### Frontend (`BusTicket_Frontend/`)
+### Frontend (`frontend/`)
 
 1. **Navigate to the frontend directory:**
    ```bash
-   cd BusTicket_Frontend
+   cd frontend
    ```
 2. **Install dependencies:**
    ```bash

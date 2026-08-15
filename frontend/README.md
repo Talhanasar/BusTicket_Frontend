@@ -16,25 +16,25 @@ This project is my first MERN web app where I learned about data management and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Talhanasar/BusTicket_Frontend.git
+   git clone https://github.com/Talhanasar/BusTicketBooking.git
    ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd BusTicket_Frontend
+    cd BusTicketBooking/frontend
     ```
 
 3. **Install the necessary dependencies:**
 
     ```bash
-    npm install
+    pnpm install
     ```
 
 4. **Start the development server:**
 
     ```bash
-    npm start
+    pnpm dev
     ```
 
     The application will be available at `http://localhost:3000`.
@@ -48,7 +48,7 @@ This project is my first MERN web app where I learned about data management and 
 ## Folder Structure
 
 ```plaintext
-BusTicket_Frontend/
+frontend/
 ├── public/
 ├── src/
 │   ├── components/
